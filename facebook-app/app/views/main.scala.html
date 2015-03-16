@@ -1,0 +1,15 @@
+@(page: String)(content: Html)
+<!DOCTYPE html>
+
+<html  ng-app>
+    <head>
+        @title(page)
+        @styleSheet("home")
+        @scripts("home") 
+    </head>
+    <body ng-controller="FacebookCtrl">
+             @content
+    </body>
+    @bodyScripts("home")
+    
+</html>
