@@ -5,6 +5,8 @@
 # Home page
 GET     /                           controllers.Application.index
 
+GET		/fbdata/:usr					controllers.Application.fbdata(usr:String)
+
 # Login page
 #GET     /login                      securesocial.controllers.LoginPage.login
 #GET     /logout                     securesocial.controllers.LoginPage.logout
