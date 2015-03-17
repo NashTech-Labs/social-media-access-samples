@@ -9,9 +9,9 @@ object Application extends Controller {
     Ok(views.html.fbpublicdata("Facebook"))
   }
   
-  def fbdata(str:String) = Action{
+  def fbdata(fbusername:String) = Action{
     
-    Ok(views.html.fbdata(str))
+    Ok(views.html.fbdata(fbusername))
  
   }
 }
