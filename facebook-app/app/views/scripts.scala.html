@@ -1,9 +1,11 @@
 @* scripts Template File *@
 @(page:String)
-   @page match{
-   	              case "home" =>{
-                    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
-                    <script src="@routes.Assets.at("javascripts/jquery.js")" type="text/javascript"></script>
-   	              	
-   	              }
-   	           }
+
+@page match{
+   	case "home" =>{
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("bootstrap-3.3.2-dist/js/bootstrap.min.js")" type="text/javascript"></script>
+ 
+    }
+}
